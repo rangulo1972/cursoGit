@@ -10,9 +10,10 @@ while (hAlarma<0) or (hAlarma>24):
     print("Error en ingreso de hora de alarma")
     print("Ingrese formato de hora entre 0 y 23 horas, número entero")
     hAlarma = int(input("Ingrese hora entre 0 y 23: "))
-    
+
 print("listo")
 print(hAlarma)
+print("------------------------------")
 
 while (hAlarma<0) or (hAlarma>60):
     print("Error en ingreso de minutos de alarma")
@@ -20,16 +21,12 @@ while (hAlarma<0) or (hAlarma>60):
     hAlarma = int(input("Ingrese hora entre 0 y 23: "))
 print("listo")
 print(mAlarma)
+print("---------------------------------")
 
 for horas in range(24):
     for minutos in range(59):
         print("Son las {}:{}".format(horas,minutos))
         if (horas==hAlarma) and (minutos==mAlarma):
             print("Suena la alarma!!!!!")
-           
-        
-    
+            exit
 
-        
-
-        
